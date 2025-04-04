@@ -15,6 +15,8 @@ Teknologier:
 
 ### Kjøre backend lokalt
 
+I backend-mappen:
+
 1. Installer avhengigheter:
    ```sh
    npm install
@@ -26,6 +28,10 @@ Teknologier:
 
 APIet vil være tilgjengelig på `http://localhost:5000/api/stations`.
 
+### Kjøre tester
+
+TODO
+
 ## Frontend
 
 Frontend er en Vite-basert React-applikasjon som henter bysykkel-data fra backend og visualiserer dette i et kart.
@@ -36,6 +42,7 @@ Teknologier:
 ### Kjøre frontend lokalt
 
 Forutsetning: Backend må kjøre på `http://localhost:5000`.
+I frontend-mappen:
 
 1. Installer avhengigheter:
    ```sh
@@ -48,9 +55,18 @@ Forutsetning: Backend må kjøre på `http://localhost:5000`.
 
 Applikasjonen vil være tilgjengelig på `http://localhost:5173`.
 
+### Kjøre tester
+
+TODO
+
+## Kjøre applikasjonen Docker
+
+Forutsetning: Docker installert
+
+TODO
+
 ## Videre arbeid
 
-- komponent-tester med react-testing-library
-- e2e-tester med Cypress / Playwright
-- Vise liste med stasjoner ved siden av kart
-- eslint
+- Tester
+- UX-forbedringer - f.eks. vise liste med stasjoner ved siden av kart.
+- Eslint for statisk kodeanalyse
