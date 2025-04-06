@@ -42,6 +42,7 @@ Teknologier:
 ### Kjøre frontend lokalt
 
 Forutsetning: Backend må kjøre på `http://localhost:5000`.
+
 I frontend-mappen:
 
 1. Installer avhengigheter:
@@ -63,7 +64,18 @@ TODO
 
 Forutsetning: Docker installert
 
-TODO
+I rotmappen:
+
+1. Bygg Docker-image:
+   ```sh
+   docker build -t oslobikes .
+   ```
+2. Kjør Docker-container:
+   ```sh
+    docker run -d -p 3000:5000 oslobikes
+    ```
+
+Frontend vil være tilgjengelig på http://localhost:3000. APIet på http://localhost:3000/api/stations.
 
 ## Videre arbeid
 
