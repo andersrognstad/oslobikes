@@ -28,19 +28,13 @@ I backend-mappen:
 
 APIet vil være tilgjengelig på `http://localhost:5000/api/stations`.
 
-### Kjøre tester
-
-I frontend-mappen kjør testene med:
-```sh
-  npm run test
-```
-
 ## Frontend
 
 Frontend er en Vite-basert React-applikasjon som henter bysykkel-data fra backend og visualiserer dette i et kart.
 
 Teknologier:
 - Vite, React, Typescript, React Leaflet, React Query, Tailwind
+- Tester: Vitest, React Testing Library, MSW
 
 ### Kjøre frontend lokalt
 
@@ -59,9 +53,12 @@ I frontend-mappen:
 
 Applikasjonen vil være tilgjengelig på `http://localhost:5173`.
 
-### Kjøre tester
+## Tester
 
-TODO
+I frontend-mappen kjør testene med:
+```sh
+  npm run test
+```
 
 ## Kjøre applikasjonen Docker
 
@@ -82,6 +79,10 @@ Frontend vil være tilgjengelig på http://localhost:3000. APIet på http://loca
 
 ## Videre arbeid
 
-- Tester
-- UX-forbedringer - f.eks. vise liste med stasjoner ved siden av kart.
-- Eslint for statisk kodeanalyse
+- UX-forbedringer, f.eks.:
+- - Vise liste ved siden av kart.
+- - Toggle visning av kun stasjoner med ledige sykler eller låser.
+- - Forbedret visning av lasting av data og feil.
+- - Bruke Punkt (Oslo Origo designsystem))
+- Eslint for statisk kodeanalyse, Prettier for formateringer
+- Backend-tester, e2e-tester med Playwright
