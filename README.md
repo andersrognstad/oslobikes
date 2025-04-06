@@ -30,7 +30,10 @@ APIet vil være tilgjengelig på `http://localhost:5000/api/stations`.
 
 ### Kjøre tester
 
-TODO
+I frontend-mappen kjør testene med:
+```sh
+  npm run test
+```
 
 ## Frontend
 
